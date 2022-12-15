@@ -3,6 +3,9 @@
     padding: 0;
     direction: rtl;
 }
+*,*::before , *::before{
+    box-sizing:border-box ;
+}
  header{
     width: 100%;
     height: 80px; 
@@ -55,8 +58,7 @@ padding: 10px;
  .p6{
     width: 300px;
     height: 200px;
-    padding-right: 640px ;
-
+    margin-right: 550px;
  }
 .search{
     direction: ltr;
@@ -65,27 +67,99 @@ padding: 10px;
     border: 5px solid rgba(221, 221, 221, 0.755);
     border-radius: 60px;
     padding-top: 5px;
-    margin-right: 470px;
+    margin-right:370px;
+    padding-left: 30px;
  }
 .p7{
     width: 20px;
     height: 20px;
     margin-top: -35px;
-    margin-right:  1140px ;
+    margin-right:  1040px ;
+}
+.p7:hover{
+    cursor: pointer;
+}
+.tt{
+    display: flex ;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-top: 2px ;
+    margin-right: 5px;
 }
 .p8{
     width: 30px;
     height: 30px;
     margin-top: -28px ;
-    margin-right: 500px;
+    margin-right: 400px;
 }
+.t2{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-right:370px;
+    margin-top: 20px ;
+}
+.tt .t2{
+    visibility:hidden;
+    position: absolute;
+}
+.tt:hover{
+    cursor: pointer;
+}
+.tt:hover .t2{
+    visibility: visible;
+}
+.ttt{
+    display: flex;
+    position: relative;
+    width: 30px;
+    height: 25px; 
+    margin-top: -27px;
+    margin-right: 4px;
+}
+
+
 .p9{
     width: 40px;
     height: 25px;
     margin-top: -29px ;
-    margin-right: 540px ; 
+    margin-right: 440px ; 
 }
-/* fnish header */
+.t3{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-right: 420px;
+    margin-top: 20px;
+}
+.ttt .t3{
+    visibility:hidden;
+    position: absolute;
+}
+.ttt:hover{
+    cursor: pointer;
+}
+.ttt:hover .t3{
+    visibility: visible;
+}
+.poc{
+    width: 100px;
+    height: 30px;
+    margin-top: 10px ;
+    margin-right: 690px;
+}
+.pco{
+    width: 100px;
+    height: 30px;
+    margin-top: -30px;
+    margin-right: 580px;
+}
+/* fnish main */
     footer{
         display: flex;
         flex-direction: column;
