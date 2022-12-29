@@ -1,10 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:arial,sans-serif;   
+    font-size:0.85rem;  
     direction: rtl;
 }
 *,*::before , *::before{
     box-sizing:border-box ;
+}
+* a:hover{
+    text-decoration: underline;
 }
  header{
     width: 100%;
@@ -16,23 +21,35 @@
     width: 50px;
     height: 50px;
    display:flex;
-   margin-left: 10px;
+   position: relative;
    margin-right: 30px;
    margin-top: 15px;
    padding: 10px;
+}
+.y9{
+    width: auto;
+    height: auto;
+    background-color: azure;
+    margin-right: 10px;
+}
+.p1 .y9{
+    visibility: hidden;
+    position: absolute;
+}
+.p1:hover .y9{
+    visibility: visible;
 }
 header a{
     display:inline-block ;
     text-decoration: none;
     color: black;
-    font-size: 1.25rem;
 }
 .icon{
 width: 50px;
 height: 50px;
 display:flex;
-margin-left: 20px;
-margin-right: 10px;
+margin-left: 5px;
+margin-right: 2px;
 margin-top: 15px;
 padding: 10px;
 }
@@ -40,12 +57,14 @@ padding: 10px;
     display: inline-block;
     margin-top: 25px;
     padding: 10px;
+    font-size: small;
 }
 .image{
     display: inline-block;
     margin-top: 25px;
-    margin-right: 25px;
+    margin-right:px;
     padding: 10px;
+    font-size: small;
 }
 /*fnish header*/
  main{
@@ -58,23 +77,27 @@ padding: 10px;
  .p6{
     width: 300px;
     height: 200px;
-    margin-right: 550px;
+    margin-right: 580px;
  }
 .search{
     direction: ltr;
     width: 700px;
     height: 50px ;
-    border: 5px solid rgba(221, 221, 221, 0.755);
+    border: 1px solid rgba(236, 240, 241,1.0) ;  
+    box-shadow:30px;
     border-radius: 60px;
     padding-top: 5px;
-    margin-right:370px;
-    padding-left: 30px;
- }
+    margin-right:430px;
+    padding-left: 38px;
+    font-size: 1.30rem;
+}
+
+
 .p7{
     width: 20px;
     height: 20px;
     margin-top: -35px;
-    margin-right:  1040px ;
+    margin-right:  1100px ;
 }
 .p7:hover{
     cursor: pointer;
@@ -85,13 +108,14 @@ padding: 10px;
     width: 30px;
     height: 30px;
     margin-top: 2px ;
-    margin-right: 5px;
+    margin-right: 35px;
 }
 .p8{
     width: 30px;
-    height: 30px;
-    margin-top: -28px ;
-    margin-right: 400px;
+    height: 20px;
+    margin-top: -25px ;
+    margin-right: 410px;
+    padding-left:  3px; ;
 }
 .t2{
     width: 100px;
@@ -101,6 +125,8 @@ padding: 10px;
     border-radius: 10px;
     margin-right:370px;
     margin-top: 20px ;
+    padding-right: 8px;
+    padding-top: 5px;
 }
 .tt .t2{
     visibility:hidden;
@@ -118,7 +144,7 @@ padding: 10px;
     width: 30px;
     height: 25px; 
     margin-top: -27px;
-    margin-right: 4px;
+    margin-right: 33px;
 }
 
 
@@ -136,6 +162,8 @@ padding: 10px;
     border-radius: 10px;
     margin-right: 420px;
     margin-top: 20px;
+    padding-right: 8px;
+    padding-top: 5px;
 }
 .ttt .t3{
     visibility:hidden;
@@ -150,14 +178,24 @@ padding: 10px;
 .poc{
     width: 100px;
     height: 30px;
+    border:1px solid rgba(236, 240, 241,1.0) ;
     margin-top: 10px ;
-    margin-right: 690px;
+    margin-right: 770px;
+}
+.poc:hover{
+    cursor: pointer;
+    border-color: blue;
 }
 .pco{
     width: 100px;
     height: 30px;
+    border:1px solid rgba(236, 240, 241,1.0);
     margin-top: -30px;
-    margin-right: 580px;
+    margin-right:650px;
+}
+.pco:hover{
+    cursor: pointer;
+    border-color: blue;
 }
 /* fnish main */
     footer{
@@ -165,46 +203,46 @@ padding: 10px;
         flex-direction: column;
         width: 100%;
         height: 50px;
-        background-color: rgba(245, 245, 220, 0.375);
-        margin-top: 230px ;
+        background-color: rgba(220, 221, 225,0.2);
+        margin-top: 250px ;
     }
     .setting{
         text-decoration:none;
         color: black;
         padding-right: 15px;
-        padding-top: 15px;
+        padding-top: 14px;
     }
     .terms{
         text-decoration:none;
         color: black;
         margin-right: 80px;
-        margin-top: -17px;
+        margin-top: -14px;
     }
     .privacy{
         text-decoration:none;
         color: black;
         margin-right: 140px;
-        margin-top: -17px;
+        margin-top: -14px;
     }
     .adverstisng{
         direction: ltr;
         text-decoration:none;
         color: black;
-        margin-top: -17px;
+        margin-top: -14px;
         margin-left: 10px;
     }
     .business{
         direction: ltr;
         text-decoration:none;
         color: black;
-        margin-top: -17px;
+        margin-top: -14px;
         margin-left: 100px;
     }
     .howsearchworks{
         direction: ltr;
         text-decoration:none;
         color: black;
-        margin-top: -17px;
+        margin-top: -14px;
         margin-left: 170px;
     }
     /* fnish footer */
